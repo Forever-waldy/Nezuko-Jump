@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 12px solid rgb(101, 255, 101);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.pedra {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    left: 110;
+    animation: pedra-animation 1.8s infinite linear;
+}
+
+.nezuko {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 100px;
+}
+
+.jump {
+    animation: jump 550ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 1000px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.goku {
+    position: absolute;
+    width: 80px;
+    left: 350px;
+}
+
+body {
+    background-color:#87CEEB;
+
+}
+
+h1 {
+    font: normal 40pt Comic Sans MS;
+}
+
+@keyframes pedra-animation {
+    from {
+        right: -140px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 120px;
+    }
+
+    50% {
+        bottom: 120px;
+    }
+
+    60% {
+        bottom: 120px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -1000px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
